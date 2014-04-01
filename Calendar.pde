@@ -25,7 +25,6 @@ class Calendar {
         //Get total days and split by 2PI
         for (int i = startMonth; i <= endMonth; i++) {
 
-            println(i);
             // Get month end
             if  (i == endMonth) {
                 cur_endDay = endDay;
@@ -34,7 +33,7 @@ class Calendar {
             }
             for (int j = cur_startDay; j <= cur_endDay; j++) {
                 totalDays++;
-                println("total: " + totalDays + ", month: ", Months[i-1] + ", day: " + j);
+                // println("total: " + totalDays + ", month: ", Months[i-1] + ", day: " + j);
                 CalendarMap.add( j + " " + Months[i-1]);
             }
             cur_startDay = 1;
